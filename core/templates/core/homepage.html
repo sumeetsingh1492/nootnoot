@@ -2,35 +2,79 @@
 
 {% block content %}
 <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
+  <p>If you pass in 3 numbers between 1 and 0, it will predict what the 4th one is based on a trained set.<p>
+    <table width="100%">
+      <tbody>
+      <tr class="wch">
+      <td></td>
+      <td colspan="2">Input</td>
+      <td></td>
+      <td>Output</td>
+      </tr>
+      <tr>
+      <td><strong>Training data 1</strong></td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      </tr>
+      <tr>
+      <td><strong>Training data 2</strong></td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      </tr>
+      <tr>
+      <td><strong>Training data 3</strong></td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      </tr>
+      <tr>
+      <td><strong>Training data 4</strong></td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      </tr>
+      <tr>
+      <td colspan="5"></td>
+      </tr>
+      <tr>
+      <td><strong>New Situation</strong></td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td><strong>?</strong></td>
+      </tr>
+      </tbody>
+    </table>
+</div>
+<br>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <h4>Try it out here!</h4>
+   </div>
+    <div class="row">
+      <div class="input-field col s4">
+        <input type="number" class="validate" required="required">
+        <label data-error="Enter 1 or 0 please" data-success="OK, you're good!">Input 1</label>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-          <label for="disabled">Disabled</label>
-        </div>
+      <div class="input-field col s4">
+        <input type="number" class="validate" required="required">
+        <label data-error="Enter 1 or 0 please" data-success="OK, you're good!">Input 2</label>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
+      <div class="input-field col s4">
+        <input type="number" class="validate" required="required">
+        <label data-error="Enter 1 or 0 please" data-success="OK, you're good!">Input 3</label>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-    </form>
-  </div>
+    </div>
+    <div class="row">
+       <button class="btn waves-effect waves-light valign-wrapper" type="submit" name="action">Predict</button>
+    </div>
+  </form>
+</div>
 {% endblock %}

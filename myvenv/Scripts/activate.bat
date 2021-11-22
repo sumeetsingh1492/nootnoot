@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\singsu05\OneDrive - Reed Elsevier Group ICO Reed Elsevier Inc\Documents\MyFiles\August\nootnoot\myvenv
+set VIRTUAL_ENV=C:\MieiDocumenti\nootnoot\myvenv
 
 if not defined PROMPT set PROMPT=$P$G
 

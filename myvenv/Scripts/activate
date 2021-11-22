@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\singsu05\OneDrive - Reed Elsevier Group ICO Reed Elsevier Inc\Documents\MyFiles\August\nootnoot\myvenv"
+VIRTUAL_ENV="C:\MieiDocumenti\nootnoot\myvenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
